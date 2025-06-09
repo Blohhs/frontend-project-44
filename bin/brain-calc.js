@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { sum, substract, multiply, division } from "./math.js";
-
+import { sum, substract, multiply } from "./math.js";
 const OPERATORS = {
   sum: "+",
   substract: "-",
-  multiply: "*",
-  division: "/"
+  multiply: "*"
 };
 
 const calculate = (a, b, operator) => {
@@ -14,7 +12,6 @@ const calculate = (a, b, operator) => {
     case OPERATORS.sum: return sum(a, b);
     case OPERATORS.substract: return substract(a, b);
     case OPERATORS.multiply: return multiply(a, b);
-    case OPERATORS.division: return division(a, b);
     default: return NaN;
   }
 };
