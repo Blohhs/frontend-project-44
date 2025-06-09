@@ -1,5 +1,5 @@
 {
-  "name": "brain-games",
+  "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "Hexlet frontend project 44 - Brain Games",
   "main": "index.js",
